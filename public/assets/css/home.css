@@ -1,0 +1,79 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    background: #1c546e;
+    overflow: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main{
+    justify-content: space-between;
+    transition-duration: 0.3s;
+}
+.main h2{
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:10px;
+    color: #1c546e;
+}
+.contenedor{
+    padding: 10px;
+    transition-duration: 0.3s;
+    min-height: 400px;
+}
+table *{
+    text-align: center;
+}
+.formulario-llegaron{
+    background: #fff;
+    box-shadow: 0 6px 10px 4px rgba(164, 165, 167, 0.15);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    padding: 10px 10px 10px 10px;
+    height: 100%;
+}
+
+.formulario-marcar{
+    background: #fff;
+    box-shadow: 0 6px 10px 4px rgba(164, 165, 167, 0.15);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    padding: 10px 10px 10px 10px;
+    height: 100%;
+}
+.nombre-practicante p{
+    padding-left: 10px;
+}
+.nombre-practicante p span{
+    padding-left: 5px;
+}
+.m-auto{
+    margin: auto;
+}
+/*
+select option.incompleto {
+    background: #f4433631;
+}
+select option.completo {
+    background: #4caf4f38;
+}
+select option.salida {
+    background: #cfff225b;
+}
+
+*/
