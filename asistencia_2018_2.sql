@@ -70,12 +70,12 @@ DELIMITER ;
 
 CREATE TABLE `detalle_asistencia` (
   `id` int(11) NOT NULL,
-  `codPracticante_fk` char(8) COLLATE utf8_spanish2_ci NOT NULL,
+  `codPracticante_fk` char(8) COLLATE utf8_spanish_ci NOT NULL,
   `fecha` date DEFAULT NULL,
   `horEntrada` time DEFAULT NULL,
   `horSalida` time DEFAULT NULL,
   `horTotales` double DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 -- --------------------------------------------------------
 
@@ -84,15 +84,15 @@ CREATE TABLE `detalle_asistencia` (
 --
 
 CREATE TABLE `practicantes` (
-  `dni` char(8) COLLATE utf8_spanish2_ci NOT NULL,
-  `apePaterno` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
-  `apeMaterno` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
-  `nombres` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
+  `dni` char(8) COLLATE utf8_spanish_ci NOT NULL,
+  `apePaterno` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `apeMaterno` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `nombres` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `fecNacimiento` date NOT NULL,
-  `sexo` char(1) COLLATE utf8_spanish2_ci NOT NULL,
-  `codTurno_fk` char(2) COLLATE utf8_spanish2_ci NOT NULL,
-  `descripcion` mediumtext COLLATE utf8_spanish2_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+  `sexo` char(1) COLLATE utf8_spanish_ci NOT NULL,
+  `codTurno_fk` char(2) COLLATE utf8_spanish_ci NOT NULL,
+  `descripcion` mediumtext COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `practicantes`
@@ -111,10 +111,10 @@ INSERT INTO `practicantes` (`dni`, `apePaterno`, `apeMaterno`, `nombres`, `fecNa
 --
 
 CREATE TABLE `turnos` (
-  `codigo` char(2) COLLATE utf8_spanish2_ci NOT NULL,
-  `nombre` varchar(25) COLLATE utf8_spanish2_ci NOT NULL,
-  `descripcion` mediumtext COLLATE utf8_spanish2_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+  `codigo` char(2) COLLATE utf8_spanish_ci NOT NULL,
+  `nombre` varchar(25) COLLATE utf8_spanish_ci NOT NULL,
+  `descripcion` mediumtext COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `turnos`
