@@ -20,6 +20,7 @@ class Practicante
         /* QUERY */
         $stm->execute();
         $rs=$stm->get_result();
+        $array=[];
         while ($myrow = $rs->fetch_assoc()) {
             $array[]=$myrow;
         }
