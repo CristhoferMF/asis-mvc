@@ -35,7 +35,7 @@ require_once 'app/controller/home_controller.php';
     <div class="main col-xl-11 col-md-12 col-12 row">
         <div class="contenedor col-xl-6">
         <div class="formulario-marcar">
-            <h2>MARCAR ASISTENCIA MERGE RAMA 1 prueba 2</h2>
+            <h2>MARCAR ASISTENCIA</h2>
                 <div class="form-row">
                     <div class="form-group col-12">
                         <select class="custom-select" id="select-practicante">
